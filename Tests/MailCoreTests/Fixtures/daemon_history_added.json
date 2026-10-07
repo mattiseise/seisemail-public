@@ -1,0 +1,81 @@
+{
+ "history": [
+  {
+   "id": "1001",
+   "messages": [
+    {
+     "id": "m1",
+     "threadId": "t1"
+    }
+   ],
+   "messagesAdded": [
+    {
+     "message": {
+      "id": "m1",
+      "threadId": "t1",
+      "labelIds": [
+       "UNREAD",
+       "CATEGORY_UPDATES",
+       "INBOX"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "1002",
+   "messages": [
+    {
+     "id": "m2",
+     "threadId": "t2"
+    }
+   ],
+   "labelsAdded": [
+    {
+     "message": {
+      "id": "m2",
+      "threadId": "t2",
+      "labelIds": [
+       "STARRED"
+      ]
+     },
+     "labelIds": [
+      "STARRED"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "1003",
+   "messages": [
+    {
+     "id": "m3",
+     "threadId": "t1"
+    },
+    {
+     "id": "m4",
+     "threadId": "t3"
+    }
+   ],
+   "messagesAdded": [
+    {
+     "message": {
+      "id": "m3",
+      "threadId": "t1",
+      "labelIds": [
+       "SENT"
+      ]
+     }
+    },
+    {
+     "message": {
+      "id": "m4",
+      "threadId": "t3"
+     }
+    }
+   ]
+  }
+ ],
+ "nextPageToken": "page-2",
+ "historyId": "1010"
+}

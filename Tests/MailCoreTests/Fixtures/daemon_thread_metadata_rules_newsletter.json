@@ -1,0 +1,70 @@
+{
+ "id": "t1",
+ "historyId": "1009",
+ "messages": [
+  {
+   "id": "m1",
+   "threadId": "t1",
+   "labelIds": [
+    "INBOX",
+    "Label_7"
+   ],
+   "internalDate": "1791100000000",
+   "payload": {
+    "mimeType": "multipart/alternative",
+    "headers": [
+     {
+      "name": "From",
+      "value": "Uutiset <uutiset@lehti.fi>"
+     },
+     {
+      "name": "To",
+      "value": "matti@example.fi"
+     },
+     {
+      "name": "Subject",
+      "value": "Viikon uutiset"
+     },
+     {
+      "name": "List-ID",
+      "value": "<uutiset.lehti.fi>"
+     },
+     {
+      "name": "List-Unsubscribe",
+      "value": "<mailto:pois@lehti.fi>"
+     },
+     {
+      "name": "List-Unsubscribe",
+      "value": "<https://lehti.fi/pois>"
+     }
+    ]
+   }
+  },
+  {
+   "id": "m2",
+   "threadId": "t1",
+   "labelIds": [
+    "INBOX",
+    "UNREAD"
+   ],
+   "internalDate": "1791190000000",
+   "payload": {
+    "mimeType": "text/plain",
+    "headers": [
+     {
+      "name": "from",
+      "value": "Uutiset <uutiset@lehti.fi>"
+     },
+     {
+      "name": "SUBJECT",
+      "value": "Viikon uutiset 2"
+     },
+     {
+      "name": "Cc",
+      "value": "a@x.fi, b@x.fi"
+     }
+    ]
+   }
+  }
+ ]
+}

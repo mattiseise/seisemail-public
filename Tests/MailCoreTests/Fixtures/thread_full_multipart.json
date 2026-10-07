@@ -1,0 +1,177 @@
+{
+ "id": "t1",
+ "messages": [
+  {
+   "id": "m1",
+   "threadId": "t1",
+   "labelIds": [
+    "INBOX"
+   ],
+   "snippet": "Hei Maija, sopisiko torstai?",
+   "internalDate": "1758612000000",
+   "payload": {
+    "partId": "",
+    "mimeType": "text/plain",
+    "filename": "",
+    "headers": [
+     {
+      "name": "From",
+      "value": "\"Matti Meikäläinen\" <matti@example.fi>"
+     },
+     {
+      "name": "To",
+      "value": "maija.meikalainen@gmail.com"
+     },
+     {
+      "name": "Subject",
+      "value": "=?UTF-8?B?VGFwYWFtaW5lbiB0b3JzdGFpbmE=?="
+     },
+     {
+      "name": "Date",
+      "value": "Tue, 23 Sep 2025 10:40:00 +0300"
+     },
+     {
+      "name": "Message-ID",
+      "value": "<m1@example.fi>"
+     },
+     {
+      "name": "Content-Type",
+      "value": "text/plain; charset=UTF-8"
+     }
+    ],
+    "body": {
+     "size": 30,
+     "data": "SGVpIE1haWphLApzb3Bpc2lrbyB0b3JzdGFpIGtsbyAxND8KCk1hdHRp"
+    }
+   }
+  },
+  {
+   "id": "m2",
+   "threadId": "t1",
+   "labelIds": [
+    "INBOX",
+    "UNREAD",
+    "STARRED"
+   ],
+   "snippet": "Liitteenä agenda &amp; muut",
+   "internalDate": "1758612120000",
+   "payload": {
+    "partId": "",
+    "mimeType": "multipart/mixed",
+    "filename": "",
+    "headers": [
+     {
+      "name": "From",
+      "value": "Liisa <liisa@example.fi>"
+     },
+     {
+      "name": "To",
+      "value": "maija.meikalainen@gmail.com, matti@example.fi"
+     },
+     {
+      "name": "Cc",
+      "value": "Pekka <pekka@example.fi>"
+     },
+     {
+      "name": "Subject",
+      "value": "Re: Tapaaminen torstaina"
+     },
+     {
+      "name": "Date",
+      "value": "Tue, 23 Sep 2025 10:42:00 +0300"
+     },
+     {
+      "name": "Message-ID",
+      "value": "<m2@example.fi>"
+     },
+     {
+      "name": "In-Reply-To",
+      "value": "<m1@example.fi>"
+     },
+     {
+      "name": "References",
+      "value": "<m1@example.fi>"
+     },
+     {
+      "name": "Reply-To",
+      "value": "liisa.work@example.fi"
+     },
+     {
+      "name": "Content-Type",
+      "value": "multipart/mixed; boundary=\"xyz\""
+     }
+    ],
+    "body": {
+     "size": 0
+    },
+    "parts": [
+     {
+      "partId": "0",
+      "mimeType": "multipart/alternative",
+      "filename": "",
+      "headers": [
+       {
+        "name": "Content-Type",
+        "value": "multipart/alternative; boundary=\"abc\""
+       }
+      ],
+      "body": {
+       "size": 0
+      },
+      "parts": [
+       {
+        "partId": "0.0",
+        "mimeType": "text/plain",
+        "filename": "",
+        "headers": [
+         {
+          "name": "Content-Type",
+          "value": "text/plain; charset=UTF-8"
+         }
+        ],
+        "body": {
+         "size": 20,
+         "data": "TGlpdHRlZW7DpCBhZ2VuZGEuCgpMaWlzYQ"
+        }
+       },
+       {
+        "partId": "0.1",
+        "mimeType": "text/html",
+        "filename": "",
+        "headers": [
+         {
+          "name": "Content-Type",
+          "value": "text/html; charset=UTF-8"
+         }
+        ],
+        "body": {
+         "size": 40,
+         "data": "PHA-TGlpdHRlZW7DpCA8Yj5hZ2VuZGE8L2I-LjwvcD48cD5MaWlzYTwvcD4"
+        }
+       }
+      ]
+     },
+     {
+      "partId": "1",
+      "mimeType": "application/pdf",
+      "filename": "agenda.pdf",
+      "headers": [
+       {
+        "name": "Content-Type",
+        "value": "application/pdf; name=\"agenda.pdf\""
+       },
+       {
+        "name": "Content-Disposition",
+        "value": "attachment; filename=\"agenda.pdf\""
+       }
+      ],
+      "body": {
+       "attachmentId": "att1",
+       "size": 12345
+      }
+     }
+    ]
+   }
+  }
+ ]
+}

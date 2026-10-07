@@ -1,0 +1,60 @@
+{
+ "id": "t2",
+ "historyId": "1012",
+ "messages": [
+  {
+   "id": "m1",
+   "threadId": "t2",
+   "labelIds": [
+    "SENT"
+   ],
+   "internalDate": "1791100000000",
+   "payload": {
+    "headers": [
+     {
+      "name": "From",
+      "value": "Matti <matti@example.fi>"
+     },
+     {
+      "name": "To",
+      "value": "anna@example.fi"
+     },
+     {
+      "name": "Subject",
+      "value": "Kokous"
+     }
+    ]
+   }
+  },
+  {
+   "id": "m2",
+   "threadId": "t2",
+   "labelIds": [
+    "INBOX",
+    "UNREAD",
+    "CATEGORY_PERSONAL"
+   ],
+   "internalDate": "1791100060000",
+   "payload": {
+    "headers": [
+     {
+      "name": "From",
+      "value": "Anna Ahola <anna@example.fi>"
+     },
+     {
+      "name": "To",
+      "value": "matti@example.fi"
+     },
+     {
+      "name": "Subject",
+      "value": "Automaattinen vastaus: Kokous"
+     },
+     {
+      "name": "Auto-Submitted",
+      "value": "auto-replied"
+     }
+    ]
+   }
+  }
+ ]
+}

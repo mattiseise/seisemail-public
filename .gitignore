@@ -1,0 +1,9 @@
+Config/Secrets.xcconfig
+.DS_Store
+build/
+DerivedData/
+xcuserdata/
+.superpowers/
+.build/
+iOS/*.xcodeproj/
+iOS/Generated/

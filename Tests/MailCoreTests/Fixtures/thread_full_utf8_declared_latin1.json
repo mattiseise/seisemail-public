@@ -1,0 +1,147 @@
+{
+ "id": "t11",
+ "messages": [
+  {
+   "id": "m11",
+   "threadId": "t11",
+   "labelIds": [
+    "INBOX"
+   ],
+   "snippet": "x",
+   "internalDate": "1759600000000",
+   "payload": {
+    "partId": "",
+    "mimeType": "multipart/alternative",
+    "filename": "",
+    "headers": [
+     {
+      "name": "From",
+      "value": "=?utf-8?B?TWlrYSBNw6RraW5lbg==?= <mika@example.fi>"
+     },
+     {
+      "name": "Subject",
+      "value": "Hallituksen kokous"
+     },
+     {
+      "name": "Content-Type",
+      "value": "multipart/alternative; boundary=\"_000_\""
+     }
+    ],
+    "body": {
+     "size": 0
+    },
+    "parts": [
+     {
+      "partId": "0",
+      "mimeType": "text/plain",
+      "filename": "",
+      "headers": [
+       {
+        "name": "Content-Type",
+        "value": "text/plain; charset=\"iso-8859-1\""
+       },
+       {
+        "name": "Content-Transfer-Encoding",
+        "value": "quoted-printable"
+       }
+      ],
+      "body": {
+       "size": 207,
+       "data": "SGFsbGl0dWtzZW4ga29rb3VzDQrCpyAzIEtva291a3NlbiBsYWlsbGlzdXVzIGphIHDDpMOkdMO2c3ZhbHRhaXN1dXMNCkVzaXR0ZWxpasOkOiBpc8Okbm7Dtml0c2lqw6QgTWlrYSBNw6RraW5lbg0KSsOkcmplc3RlbG3DpHZpaXR0YXVzOiBUZWFtcy1rb2tvdXMg4oCdSGFsbGl0dXPigJ0g4oCTIGhpbnRhIDEyIOKCrA0KSHl2w6TDpCBww6RpdsOkw6Qg8J-Riw0K"
+      }
+     },
+     {
+      "partId": "1",
+      "mimeType": "text/html",
+      "filename": "",
+      "headers": [
+       {
+        "name": "Content-Type",
+        "value": "text/html; charset=\"iso-8859-1\""
+       },
+       {
+        "name": "Content-Transfer-Encoding",
+        "value": "quoted-printable"
+       }
+      ],
+      "body": {
+       "size": 460,
+       "data": "PGh0bWw-PGhlYWQ-PG1ldGEgaHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7IGNoYXJzZXQ9dXRmLTgiPjwvaGVhZD48Ym9keT48ZGl2IGNsYXNzPSJXb3JkU2VjdGlvbjEiPjxwIGNsYXNzPSJNc29Ob3JtYWwiPkhhbGxpdHVrc2VuIGtva291czwvcD48cCBjbGFzcz0iTXNvTm9ybWFsIj7CpyAzIEtva291a3NlbiBsYWlsbGlzdXVzIGphIHDDpMOkdMO2c3ZhbHRhaXN1dXM8L3A-PHAgY2xhc3M9Ik1zb05vcm1hbCI-RXNpdHRlbGlqw6Q6IGlzw6RubsO2aXRzaWrDpCBNaWthIE3DpGtpbmVuPC9wPjxwIGNsYXNzPSJNc29Ob3JtYWwiPkrDpHJqZXN0ZWxtw6R2aWl0dGF1czogVGVhbXMta29rb3VzIOKAnUhhbGxpdHVz4oCdIOKAkyBoaW50YSAxMiDigqw8L3A-PHAgY2xhc3M9Ik1zb05vcm1hbCI-SHl2w6TDpCBww6RpdsOkw6Qg8J-RizwvcD48L2Rpdj48L2JvZHk-PC9odG1sPg"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "m12",
+   "threadId": "t11",
+   "labelIds": [
+    "INBOX"
+   ],
+   "snippet": "x",
+   "internalDate": "1759600000000",
+   "payload": {
+    "partId": "",
+    "mimeType": "multipart/alternative",
+    "filename": "",
+    "headers": [
+     {
+      "name": "From",
+      "value": "=?utf-8?B?TWlrYSBNw6RraW5lbg==?= <mika@example.fi>"
+     },
+     {
+      "name": "Subject",
+      "value": "Hallituksen kokous"
+     },
+     {
+      "name": "Content-Type",
+      "value": "multipart/alternative; boundary=\"_000_\""
+     }
+    ],
+    "body": {
+     "size": 0
+    },
+    "parts": [
+     {
+      "partId": "0",
+      "mimeType": "text/plain",
+      "filename": "",
+      "headers": [
+       {
+        "name": "Content-Type",
+        "value": "text/plain; charset=\"windows-1252\""
+       },
+       {
+        "name": "Content-Transfer-Encoding",
+        "value": "quoted-printable"
+       }
+      ],
+      "body": {
+       "size": 214,
+       "data": "SGFsbGl0dWtzZW4ga29rb3VzIJYgMjAyNg0KwqcgMyBLb2tvdWtzZW4gbGFpbGxpc3V1cyBqYSBww6TDpHTDtnN2YWx0YWlzdXVzDQpFc2l0dGVsaWrDpDogaXPDpG5uw7ZpdHNpasOkIE1pa2EgTcOka2luZW4NCkrDpHJqZXN0ZWxtw6R2aWl0dGF1czogVGVhbXMta29rb3VzIOKAnUhhbGxpdHVz4oCdIOKAkyBoaW50YSAxMiDigqwNCkh5dsOkw6QgcMOkaXbDpMOkIPCfkYsNCg"
+      }
+     },
+     {
+      "partId": "1",
+      "mimeType": "text/html",
+      "filename": "",
+      "headers": [
+       {
+        "name": "Content-Type",
+        "value": "text/html; charset=\"windows-1252\""
+       },
+       {
+        "name": "Content-Transfer-Encoding",
+        "value": "quoted-printable"
+       }
+      ],
+      "body": {
+       "size": 461,
+       "data": "PGh0bWw-PGhlYWQ-PG1ldGEgaHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7IGNoYXJzZXQ9dXRmLTgiPjwvaGVhZD48Ym9keT48ZGl2IGNsYXNzPSJXb3JkU2VjdGlvbjEiPjxwIGNsYXNzPSJNc29Ob3JtYWwiPkhhbGxpdHVrc2VuIGtva291c6A8L3A-PHAgY2xhc3M9Ik1zb05vcm1hbCI-wqcgMyBLb2tvdWtzZW4gbGFpbGxpc3V1cyBqYSBww6TDpHTDtnN2YWx0YWlzdXVzPC9wPjxwIGNsYXNzPSJNc29Ob3JtYWwiPkVzaXR0ZWxpasOkOiBpc8Okbm7Dtml0c2lqw6QgTWlrYSBNw6RraW5lbjwvcD48cCBjbGFzcz0iTXNvTm9ybWFsIj5Kw6RyamVzdGVsbcOkdmlpdHRhdXM6IFRlYW1zLWtva291cyDigJ1IYWxsaXR1c-KAnSDigJMgaGludGEgMTIg4oKsPC9wPjxwIGNsYXNzPSJNc29Ob3JtYWwiPkh5dsOkw6QgcMOkaXbDpMOkIPCfkYs8L3A-PC9kaXY-PC9ib2R5PjwvaHRtbD4"
+      }
+     }
+    ]
+   }
+  }
+ ]
+}

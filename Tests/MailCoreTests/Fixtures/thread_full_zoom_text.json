@@ -1,0 +1,50 @@
+{
+ "id": "tz1",
+ "messages": [
+  {
+   "id": "mz1",
+   "threadId": "tz1",
+   "labelIds": [
+    "INBOX",
+    "UNREAD"
+   ],
+   "snippet": "Pekka Esimerkki kutsuu sinut ajoitettuun Zoom-kokoukseen. Aihe: Projektikatselmus Aika: 6.10.2026 14:00 Helsinki Join Zoom Meeting",
+   "internalDate": "1791187200000",
+   "payload": {
+    "partId": "",
+    "mimeType": "text/plain",
+    "filename": "",
+    "headers": [
+     {
+      "name": "From",
+      "value": "Pekka Esimerkki <pekka@example.fi>"
+     },
+     {
+      "name": "To",
+      "value": "matti@example.fi"
+     },
+     {
+      "name": "Subject",
+      "value": "Zoom-kokous: Projektikatselmus"
+     },
+     {
+      "name": "Date",
+      "value": "Mon, 05 Oct 2026 09:00:00 +0300"
+     },
+     {
+      "name": "Message-ID",
+      "value": "<mz1@example.fi>"
+     },
+     {
+      "name": "Content-Type",
+      "value": "text/plain; charset=utf-8"
+     }
+    ],
+    "body": {
+     "size": 369,
+     "data": "UGVra2EgRXNpbWVya2tpIGt1dHN1dSBzaW51dCBham9pdGV0dHV1biBab29tLWtva291a3NlZW4uCgpBaWhlOiBQcm9qZWt0aWthdHNlbG11cwpBaWthOiA2LjEwLjIwMjYgMTQ6MDAgSGVsc2lua2kKCkpvaW4gWm9vbSBNZWV0aW5nCmh0dHBzOi8vdXMwMndlYi56b29tLnVzL2ovODEyMzQ1Njc4OTA_cHdkPVFXeGhaR1JwYmpwdmNHVnVVMlZ6WVcxbC4xCgpNZWV0aW5nIElEOiA4MTIgMzQ1NiA3ODkwClBhc3Njb2RlOiA0ODI5MTMKCk9uZSB0YXAgbW9iaWxlCiszNTgxMjM0NTY3LCw4MTIzNDU2Nzg5MCMsLCwsKjQ4MjkxMyMgRmlubGFuZAoKRmluZCB5b3VyIGxvY2FsIG51bWJlcjogaHR0cHM6Ly91czAyd2ViLnpvb20udXMvdS9rZEVGZ2hJamsK"
+    }
+   }
+  }
+ ]
+}

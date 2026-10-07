@@ -1,0 +1,7 @@
+{"labels":[
+ {"id":"INBOX","name":"INBOX","type":"system","messageListVisibility":"hide","labelListVisibility":"labelShow"},
+ {"id":"TRASH","name":"TRASH","type":"system"},
+ {"id":"Label_1","name":"Torkku","type":"user","messageListVisibility":"show","labelListVisibility":"labelShow"},
+ {"id":"Label_2","name":"Torkku/20261005T0500Z","type":"user","messageListVisibility":"hide","labelListVisibility":"labelHide"},
+ {"id":"Label_3","name":"Lajittelu/Vaatii toimenpidettä"}
+]}

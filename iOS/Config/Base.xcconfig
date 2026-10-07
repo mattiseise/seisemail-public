@@ -1,0 +1,6 @@
+// Yhteiset asetukset iOS-projektille. Omat tunnukset ja Apple-tiimi tulevat
+// tiedostosta Config/Secrets.xcconfig, jota ei viedä gitiin.
+// Oletus; oman arvon voi asettaa Secrets.xcconfigissa (bundle ID on yksilöllinen Apple-tiimiä kohden).
+IOS_BUNDLE_ID = fi.mak8r.mail.ios
+
+#include? "../../Config/Secrets.xcconfig"

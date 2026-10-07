@@ -1,0 +1,81 @@
+{
+ "id": "tm1",
+ "messages": [
+  {
+   "id": "mt1",
+   "threadId": "tm1",
+   "labelIds": [
+    "INBOX",
+    "UNREAD"
+   ],
+   "snippet": "Hei, tervetuloa palaveriin. ________________ Microsoft Teams Tarvitsetko apua? Liity kokoukseen nyt Kokouksen tunnus: 312 345 678 901",
+   "internalDate": "1791180000000",
+   "payload": {
+    "partId": "",
+    "mimeType": "multipart/alternative",
+    "filename": "",
+    "headers": [
+     {
+      "name": "From",
+      "value": "Liisa Esimerkki <liisa@example.fi>"
+     },
+     {
+      "name": "To",
+      "value": "matti@example.fi"
+     },
+     {
+      "name": "Subject",
+      "value": "Viikkopalaveri"
+     },
+     {
+      "name": "Date",
+      "value": "Mon, 05 Oct 2026 09:00:00 +0300"
+     },
+     {
+      "name": "Message-ID",
+      "value": "<mt1@example.fi>"
+     },
+     {
+      "name": "Content-Type",
+      "value": "multipart/alternative; boundary=\"b\""
+     }
+    ],
+    "body": {
+     "size": 0
+    },
+    "parts": [
+     {
+      "partId": "0",
+      "mimeType": "text/plain",
+      "filename": "",
+      "headers": [
+       {
+        "name": "Content-Type",
+        "value": "text/plain; charset=utf-8"
+       }
+      ],
+      "body": {
+       "size": 645,
+       "data": "SGVpLCB0ZXJ2ZXR1bG9hIHBhbGF2ZXJpaW4uCgpfX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fXwpNaWNyb3NvZnQgVGVhbXMgVGFydml0c2V0a28gYXB1YT88aHR0cHM6Ly9ha2EubXMvSm9pblRlYW1zTWVldGluZz9vbWt0PWZpLUZJPgpMaWl0eSBrb2tvdWtzZWVuIG55dDxodHRwczovL2V1cjAxLnNhZmVsaW5rcy5wcm90ZWN0aW9uLm91dGxvb2suY29tLz91cmw9aHR0cHMlM0ElMkYlMkZ0ZWFtcy5taWNyb3NvZnQuY29tJTJGbCUyRm1lZXR1cC1qb2luJTJGMTklMjUzYW1lZXRpbmdfT1RrNFpqUTIlMjU0MHRocmVhZC52MiUyRjAlM0Zjb250ZXh0JTNEJTI1N2IlMjUyMlRpZCUyNTIyJTI1M2ElMjUyMnQxJTI1MjIlMjUyYyUyNTIyT2lkJTI1MjIlMjUzYSUyNTIybzElMjUyMiUyNTdkJmRhdGE9MDUlN0MwMiU3Q21hdHRpJTQwZXhhbXBsZS5maSU3Q2FiYyZzZGF0YT14eXolM0QmcmVzZXJ2ZWQ9MD4KS29rb3Vrc2VuIHR1bm51czogMzEyIDM0NSA2NzggOTAxClR1bm51c2tvb2RpOiBhQjNjRDQKX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX18K"
+      }
+     },
+     {
+      "partId": "1",
+      "mimeType": "text/html",
+      "filename": "",
+      "headers": [
+       {
+        "name": "Content-Type",
+        "value": "text/html; charset=utf-8"
+       }
+      ],
+      "body": {
+       "size": 1334,
+       "data": "PGh0bWw-PGhlYWQ-PHN0eWxlPnB7bWFyZ2luOjB9PC9zdHlsZT48L2hlYWQ-PGJvZHk-CjxwPkhlaSwgdGVydmV0dWxvYSBwYWxhdmVyaWluLjwvcD4KPGRpdiBzdHlsZT0id2lkdGg6MTAwJSI-PHNwYW4gc3R5bGU9IndoaXRlLXNwYWNlOm5vd3JhcCI-X19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX188L3NwYW4-PC9kaXY-CjxkaXY-PGRpdiBzdHlsZT0ibWFyZ2luLWJvdHRvbToyNHB4Ij48c3BhbiBzdHlsZT0iZm9udC1zaXplOjI0cHg7Zm9udC13ZWlnaHQ6NzAwIj5NaWNyb3NvZnQgVGVhbXM8L3NwYW4-CjxhIGhyZWY9Imh0dHBzOi8vZXVyMDEuc2FmZWxpbmtzLnByb3RlY3Rpb24ub3V0bG9vay5jb20vP3VybD1odHRwcyUzQSUyRiUyRmFrYS5tcyUyRkpvaW5UZWFtc01lZXRpbmclM0ZvbWt0JTNEZmktRkkmYW1wO2RhdGE9MDUmYW1wO3Jlc2VydmVkPTAiPlRhcnZpdHNldGtvIGFwdWE_PC9hPjwvZGl2Pgo8ZGl2IHN0eWxlPSJtYXJnaW4tYm90dG9tOjZweCI-PGEgaHJlZj0iaHR0cHM6Ly9ldXIwMS5zYWZlbGlua3MucHJvdGVjdGlvbi5vdXRsb29rLmNvbS8_dXJsPWh0dHBzJTNBJTJGJTJGdGVhbXMubWljcm9zb2Z0LmNvbSUyRmwlMkZtZWV0dXAtam9pbiUyRjE5JTI1M2FtZWV0aW5nX09UazRaalEyJTI1NDB0aHJlYWQudjIlMkYwJTNGY29udGV4dCUzRCUyNTdiJTI1MjJUaWQlMjUyMiUyNTNhJTI1MjJ0MSUyNTIyJTI1MmMlMjUyMk9pZCUyNTIyJTI1M2ElMjUyMm8xJTI1MjIlMjU3ZCZhbXA7ZGF0YT0wNSU3QzAyJTdDbWF0dGklNDBleGFtcGxlLmZpJTdDYWJjJmFtcDtzZGF0YT14eXolM0QmYW1wO3Jlc2VydmVkPTAiIHRhcmdldD0iX2JsYW5rIiB0aXRsZT0iTWVldGluZyBqb2luIGxpbmsiPjxzcGFuIHN0eWxlPSJmb250LXNpemU6MjBweCI-TGlpdHkga29rb3Vrc2VlbiBueXQ8L3NwYW4-PC9hPjwvZGl2Pgo8ZGl2PjxzcGFuPktva291a3NlbiB0dW5udXM6IDwvc3Bhbj48c3Bhbj4zMTIgMzQ1IDY3OCA5MDE8L3NwYW4-PC9kaXY-CjxkaXY-PHNwYW4-VHVubnVza29vZGk6IDwvc3Bhbj48c3Bhbj5hQjNjRDQ8L3NwYW4-PC9kaXY-CjxkaXY-PGEgaHJlZj0iaHR0cHM6Ly9ldXIwMS5zYWZlbGlua3MucHJvdGVjdGlvbi5vdXRsb29rLmNvbS8_dXJsPWh0dHBzJTNBJTJGJTJGdGVhbXMubWljcm9zb2Z0LmNvbSUyRm1lZXRpbmdPcHRpb25zJTJGJTNGb3JnYW5pemVySWQlM0RvMSUyNnRlbmFudElkJTNEdDEmYW1wO2RhdGE9MDUmYW1wO3Jlc2VydmVkPTAiPktva291c2FzZXR1a3NldDwvYT48L2Rpdj4KPC9kaXY-PC9ib2R5PjwvaHRtbD4"
+      }
+     }
+    ]
+   }
+  }
+ ]
+}

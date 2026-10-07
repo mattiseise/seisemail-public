@@ -1,0 +1,42 @@
+{
+ "encode": [
+  {"name": "exactMinute", "epoch": 1791180000, "stamp": "20261005T0600Z"},
+  {"name": "oneSecondRoundsUp", "epoch": 1791180001, "stamp": "20261005T0601Z"},
+  {"name": "halfSecondRoundsUp", "epoch": 1791180000.5, "stamp": "20261005T0601Z"},
+  {"name": "secondBeforeMinute", "epoch": 1791179999, "stamp": "20261005T0600Z"},
+  {"name": "yearRollover", "epoch": 1798761570, "stamp": "20270101T0000Z"},
+  {"name": "epochZero", "epoch": 0, "stamp": "19700101T0000Z"},
+  {"name": "springDSTSwitchInstant", "epoch": 1774746000, "stamp": "20260329T0100Z"},
+  {"name": "autumnDSTSwitchInstant", "epoch": 1792890000, "stamp": "20261025T0100Z"},
+  {"name": "latest", "epoch": 253402300740, "stamp": "99991231T2359Z"}
+ ],
+ "decode": [
+  {"name": "plain", "stamp": "20261005T0600Z", "epoch": 1791180000},
+  {"name": "leapDay", "stamp": "20280229T0600Z", "epoch": 1835416800},
+  {"name": "epochZero", "stamp": "19700101T0000Z", "epoch": 0},
+  {"name": "springDSTSwitchInstant", "stamp": "20260329T0100Z", "epoch": 1774746000},
+  {"name": "autumnDSTSwitchInstant", "stamp": "20261025T0100Z", "epoch": 1792890000},
+  {"name": "latest", "stamp": "99991231T2359Z", "epoch": 253402300740}
+ ],
+ "invalid": [
+  {"name": "missingZ", "stamp": "20261005T0600"},
+  {"name": "threeDigitTime", "stamp": "20261005T060Z"},
+  {"name": "sevenDigitDate", "stamp": "2026105T0600Z"},
+  {"name": "month13", "stamp": "20261305T0600Z"},
+  {"name": "february30", "stamp": "20260230T0600Z"},
+  {"name": "february29NonLeap", "stamp": "20270229T0600Z"},
+  {"name": "hour24", "stamp": "20261005T2400Z"},
+  {"name": "minute60", "stamp": "20261005T0660Z"},
+  {"name": "lowercaseT", "stamp": "20261005t0600Z"},
+  {"name": "lowercaseZ", "stamp": "20261005T0600z"},
+  {"name": "before1970", "stamp": "19691231T2359Z"},
+  {"name": "month00", "stamp": "20260005T0600Z"},
+  {"name": "day00", "stamp": "20261000T0600Z"},
+  {"name": "leadingSpace", "stamp": " 20261005T0600Z"},
+  {"name": "trailingSpace", "stamp": "20261005T0600Z "},
+  {"name": "empty", "stamp": ""},
+  {"name": "signedYear", "stamp": "+2026105T0600Z"},
+  {"name": "fullWidthDigits", "stamp": "２０２６1005T0600Z"},
+  {"name": "arabicIndicDigits", "stamp": "٢٠٢٦1005T0600Z"}
+ ]
+}

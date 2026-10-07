@@ -1,0 +1,37 @@
+{
+ "id": "t2",
+ "messages": [
+  {
+   "id": "m3",
+   "threadId": "t2",
+   "labelIds": [
+    "INBOX"
+   ],
+   "snippet": "x",
+   "internalDate": "1758612000000",
+   "payload": {
+    "partId": "",
+    "mimeType": "text/plain",
+    "filename": "",
+    "headers": [
+     {
+      "name": "From",
+      "value": "Vanha <old@example.fi>"
+     },
+     {
+      "name": "Subject",
+      "value": "=?ISO-8859-1?Q?P=E4iv=E4n_uutiset?="
+     },
+     {
+      "name": "Content-Type",
+      "value": "text/plain; charset=ISO-8859-1"
+     }
+    ],
+    "body": {
+     "size": 20,
+     "data": "SHl25OQgcORpduTkLCB05HNz5CB1dXRpc2V0Lg"
+    }
+   }
+  }
+ ]
+}

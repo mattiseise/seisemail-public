@@ -1,0 +1,26 @@
+{
+  "error": {
+    "code": 403,
+    "message": "Gmail API has not been used in project 000000000000 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/gmail.googleapis.com/overview?project=000000000000 then retry.",
+    "errors": [
+      {
+        "message": "Gmail API has not been used in project 000000000000 before or it is disabled.",
+        "domain": "usageLimits",
+        "reason": "accessNotConfigured",
+        "extendedHelp": "https://console.developers.google.com"
+      }
+    ],
+    "status": "PERMISSION_DENIED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "SERVICE_DISABLED",
+        "domain": "googleapis.com",
+        "metadata": {
+          "service": "gmail.googleapis.com",
+          "consumer": "projects/000000000000"
+        }
+      }
+    ]
+  }
+}

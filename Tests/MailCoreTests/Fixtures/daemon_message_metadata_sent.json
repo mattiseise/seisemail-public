@@ -1,0 +1,20 @@
+{
+ "id": "s1",
+ "threadId": "t9",
+ "labelIds": [
+  "SENT"
+ ],
+ "internalDate": "1791000000000",
+ "payload": {
+  "headers": [
+   {
+    "name": "To",
+    "value": "\"Virtanen, Matti\" <Matti.Virtanen@x.fi>, anna@example.fi"
+   },
+   {
+    "name": "Cc",
+    "value": "kalle@x.fi (Kalle)"
+   }
+  ]
+ }
+}

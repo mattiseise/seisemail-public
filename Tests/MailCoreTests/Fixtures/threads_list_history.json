@@ -1,0 +1,8 @@
+{
+  "threads": [
+    { "id": "t1", "snippet": "Hei", "historyId": "1001" },
+    { "id": "t2", "snippet": "Moi", "historyId": "1002" }
+  ],
+  "nextPageToken": "p2",
+  "resultSizeEstimate": 120
+}

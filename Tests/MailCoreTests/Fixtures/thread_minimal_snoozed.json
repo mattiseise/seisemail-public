@@ -1,0 +1,4 @@
+{"id":"t1","historyId":"987654","messages":[
+ {"id":"m1","threadId":"t1","labelIds":["Label_1","Label_2"],"historyId":"987600","internalDate":"1790000000000","sizeEstimate":1234},
+ {"id":"m2","threadId":"t1","labelIds":["INBOX","UNREAD"],"historyId":"987654","internalDate":"1791000000000","sizeEstimate":2345}
+]}

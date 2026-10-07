@@ -1,0 +1,41 @@
+{
+ "id": "t3",
+ "messages": [
+  {
+   "id": "m4",
+   "threadId": "t3",
+   "labelIds": [
+    "CATEGORY_PROMOTIONS"
+   ],
+   "snippet": "Tarjous",
+   "internalDate": "1758612000000",
+   "payload": {
+    "partId": "",
+    "mimeType": "text/html",
+    "filename": "",
+    "headers": [
+     {
+      "name": "From",
+      "value": "Kauppa <news@shop.fi>"
+     },
+     {
+      "name": "Subject",
+      "value": "Viikon tarjoukset"
+     },
+     {
+      "name": "Content-Type",
+      "value": "text/html; charset=utf-8"
+     },
+     {
+      "name": "Message-ID",
+      "value": "<m4@shop.fi>"
+     }
+    ],
+    "body": {
+     "size": 50,
+     "data": "PGh0bWw-PGhlYWQ-PHN0eWxlPnB7fTwvc3R5bGU-PC9oZWFkPjxib2R5PjxwPlZpaWtvbiA8Yj50YXJqb3Vrc2V0PC9iPjwvcD48cD5LYWh2aSAzICZldXJvOzwvcD48L2JvZHk-PC9odG1sPg"
+    }
+   }
+  }
+ ]
+}

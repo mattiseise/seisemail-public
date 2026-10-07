@@ -1,0 +1,127 @@
+{
+ "id": "tg1",
+ "messages": [
+  {
+   "id": "mg1",
+   "threadId": "tg1",
+   "labelIds": [
+    "INBOX",
+    "UNREAD"
+   ],
+   "snippet": "Sinut on kutsuttu tapahtumaan Liity Google Meetillä meet.google.com/abc-defg-hij",
+   "internalDate": "1791183600000",
+   "payload": {
+    "partId": "",
+    "mimeType": "multipart/mixed",
+    "filename": "",
+    "headers": [
+     {
+      "name": "From",
+      "value": "Google-kalenteri <calendar-notification@google.com>"
+     },
+     {
+      "name": "To",
+      "value": "matti@example.fi"
+     },
+     {
+      "name": "Subject",
+      "value": "Kutsu: Suunnittelu ma 5.10.2026 10–11"
+     },
+     {
+      "name": "Date",
+      "value": "Mon, 05 Oct 2026 09:00:00 +0300"
+     },
+     {
+      "name": "Message-ID",
+      "value": "<mg1@example.fi>"
+     },
+     {
+      "name": "Content-Type",
+      "value": "multipart/mixed; boundary=\"b\""
+     }
+    ],
+    "body": {
+     "size": 0
+    },
+    "parts": [
+     {
+      "partId": "0",
+      "mimeType": "multipart/alternative",
+      "filename": "",
+      "headers": [
+       {
+        "name": "Content-Type",
+        "value": "multipart/alternative; boundary=\"c\""
+       }
+      ],
+      "body": {
+       "size": 0
+      },
+      "parts": [
+       {
+        "partId": "0.0",
+        "mimeType": "text/plain",
+        "filename": "",
+        "headers": [
+         {
+          "name": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+         }
+        ],
+        "body": {
+         "size": 154,
+         "data": "U2ludXQgb24ga3V0c3V0dHUgdGFwYWh0dW1hYW4KCkxpaXR5IEdvb2dsZSBNZWV0aWxsw6QKaHR0cHM6Ly9tZWV0Lmdvb2dsZS5jb20vYWJjLWRlZmctaGlqP2hzPTIyNAoKTGlpdHkgcHVoZWxpbWl0c2UKKEZJKSArMzU4IDkgMTIzNDU2NzggUElOOiAxMjM0NTY3ODkjCg"
+        }
+       },
+       {
+        "partId": "0.1",
+        "mimeType": "text/html",
+        "filename": "",
+        "headers": [
+         {
+          "name": "Content-Type",
+          "value": "text/html; charset=utf-8"
+         }
+        ],
+        "body": {
+         "size": 742,
+         "data": "PGh0bWw-PGJvZHk-PGRpdj5TaW51dCBvbiBrdXRzdXR0dSB0YXBhaHR1bWFhbjwvZGl2Pgo8dGFibGU-PHRyPjx0ZD48YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL3VybD9xPWh0dHBzOi8vbWVldC5nb29nbGUuY29tL2FiYy1kZWZnLWhpaj9ocyUzRDIyNCZhbXA7c2E9RCZhbXA7c291cmNlPWNhbGVuZGFyJmFtcDt1c2c9QU92VmF3MCIgc3R5bGU9ImNvbG9yOiNmZmYiPkxpaXR5IEdvb2dsZSBNZWV0aWxsw6Q8L2E-PC90ZD48L3RyPgo8dHI-PHRkPkxpaXR0eW1pc2xpbmtraTogPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS91cmw_cT1odHRwczovL21lZXQuZ29vZ2xlLmNvbS9hYmMtZGVmZy1oaWomYW1wO3NhPUQmYW1wO3NvdXJjZT1jYWxlbmRhciZhbXA7dXNnPUFPdlZhdzEiPm1lZXQuZ29vZ2xlLmNvbS9hYmMtZGVmZy1oaWo8L2E-PC90ZD48L3RyPgo8dHI-PHRkPjxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vdXJsP3E9aHR0cHM6Ly9zdXBwb3J0Lmdvb2dsZS5jb20vYS91c2Vycy9hbnN3ZXIvOTI4MjcyMCZhbXA7c2E9RCI-TGlzw6R0aWV0b2phIE1lZXRpc3TDpDwvYT48L3RkPjwvdHI-Cjx0cj48dGQ-PGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS91cmw_cT1odHRwczovL3RlbC5tZWV0L2FiYy1kZWZnLWhpaj9waW4lM0QxMjM0NTY3ODkwJmFtcDtzYT1EIj5MaWl0eSBwdWhlbGltaXRzZTwvYT48L3RkPjwvdHI-PC90YWJsZT48L2JvZHk-PC9odG1sPg"
+        }
+       },
+       {
+        "partId": "0.2",
+        "mimeType": "text/calendar",
+        "filename": "",
+        "headers": [
+         {
+          "name": "Content-Type",
+          "value": "text/calendar; charset=UTF-8; method=REQUEST"
+         }
+        ],
+        "body": {
+         "size": 95,
+         "data": "QkVHSU46VkNBTEVOREFSDQpNRVRIT0Q6UkVRVUVTVA0KQkVHSU46VkVWRU5UDQpTVU1NQVJZOlN1dW5uaXR0ZWx1DQpFTkQ6VkVWRU5UDQpFTkQ6VkNBTEVOREFSDQo"
+        }
+       }
+      ]
+     },
+     {
+      "partId": "1",
+      "mimeType": "application/ics",
+      "filename": "invite.ics",
+      "headers": [
+       {
+        "name": "Content-Type",
+        "value": "application/ics; charset=utf-8"
+       }
+      ],
+      "body": {
+       "size": 95,
+       "data": "QkVHSU46VkNBTEVOREFSDQpNRVRIT0Q6UkVRVUVTVA0KQkVHSU46VkVWRU5UDQpTVU1NQVJZOlN1dW5uaXR0ZWx1DQpFTkQ6VkVWRU5UDQpFTkQ6VkNBTEVOREFSDQo"
+      }
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "id": "t1",
+ "snippet": "x",
+ "messages": [
+  {
+   "id": "m1",
+   "threadId": "t1",
+   "labelIds": [
+    "INBOX"
+   ],
+   "snippet": "Hei",
+   "internalDate": "1758612000000",
+   "payload": {
+    "mimeType": "text/plain",
+    "headers": [
+     {
+      "name": "From",
+      "value": "\"Matti Meikäläinen\" <matti@example.fi>"
+     },
+     {
+      "name": "Subject",
+      "value": "Tapaaminen"
+     },
+     {
+      "name": "Date",
+      "value": "x"
+     },
+     {
+      "name": "Content-Type",
+      "value": "text/plain"
+     }
+    ]
+   }
+  },
+  {
+   "id": "m2",
+   "threadId": "t1",
+   "labelIds": [
+    "INBOX",
+    "UNREAD",
+    "STARRED"
+   ],
+   "snippet": "It&#39;s liitteenä",
+   "internalDate": "1758612120000",
+   "payload": {
+    "mimeType": "multipart/mixed",
+    "headers": [
+     {
+      "name": "From",
+      "value": "Maija <maija.meikalainen@gmail.com>"
+     },
+     {
+      "name": "Subject",
+      "value": "Re: Tapaaminen"
+     },
+     {
+      "name": "Content-Type",
+      "value": "multipart/mixed; boundary=\"x\""
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,624 @@
+{
+ "cases": [
+  {
+   "name": "List-Unsubscribe present",
+   "headers": {
+    "List-Unsubscribe": "<mailto:pois@lehti.fi>"
+   },
+   "expect": {
+    "rule": "uutiskirjeet",
+    "label": "Lajittelu/Uutiskirjeet",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "List-Id only",
+   "headers": {
+    "List-Id": "<uutiset.lehti.fi>"
+   },
+   "expect": {
+    "rule": "uutiskirjeet",
+    "label": "Lajittelu/Uutiskirjeet",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "List-ID spelled in capitals",
+   "headers": {
+    "List-ID": "<uutiset.lehti.fi>"
+   },
+   "expect": {
+    "rule": "uutiskirjeet",
+    "label": "Lajittelu/Uutiskirjeet",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "blank List-Unsubscribe is absent",
+   "headers": {
+    "List-Unsubscribe": "   "
+   },
+   "expect": null
+  },
+  {
+   "name": "noreply@ sender",
+   "from": "GitHub <noreply@github.com>",
+   "expect": {
+    "rule": "ilmoitukset",
+    "label": "Lajittelu/Ilmoitukset",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "no-reply@ sender",
+   "from": "Google <no-reply@accounts.google.com>",
+   "expect": {
+    "rule": "ilmoitukset",
+    "label": "Lajittelu/Ilmoitukset",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "notifications@ sender",
+   "from": "GitHub <notifications@github.com>",
+   "expect": {
+    "rule": "ilmoitukset",
+    "label": "Lajittelu/Ilmoitukset",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "calendar-notification@google.com",
+   "from": "Google Calendar <calendar-notification@google.com>",
+   "expect": {
+    "rule": "ilmoitukset",
+    "label": "Lajittelu/Ilmoitukset",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "pattern is case-insensitive",
+   "from": "NoReply@Example.COM",
+   "expect": {
+    "rule": "ilmoitukset",
+    "label": "Lajittelu/Ilmoitukset",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "notification-service@ is not notifications?@",
+   "from": "Palvelu <notification-service@x.fi>",
+   "expect": null
+  },
+  {
+   "name": "Auto-Submitted auto-generated",
+   "headers": {
+    "Auto-Submitted": "auto-generated"
+   },
+   "expect": {
+    "rule": "ilmoitukset",
+    "label": "Lajittelu/Ilmoitukset",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "Auto-Submitted no",
+   "headers": {
+    "Auto-Submitted": "no"
+   },
+   "expect": null
+  },
+  {
+   "name": "Auto-Submitted No (case)",
+   "headers": {
+    "Auto-Submitted": " No "
+   },
+   "expect": null
+  },
+  {
+   "name": "Auto-Submitted auto-replied with comment and parameter, no SENT in thread",
+   "headers": {
+    "Auto-Submitted": "auto-replied (vacation); owner-email=a@x.fi"
+   },
+   "expect": {
+    "rule": "ilmoitukset",
+    "label": "Lajittelu/Ilmoitukset",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "Auto-Submitted empty after normalising",
+   "headers": {
+    "Auto-Submitted": "(comment only)"
+   },
+   "expect": null
+  },
+  {
+   "name": "Apple no_reply receipt misses the contract pattern and lands in Kuitit",
+   "from": "Apple <no_reply@email.apple.com>",
+   "subject": "Your receipt from Apple.",
+   "expect": {
+    "rule": "kuitit",
+    "label": "Lajittelu/Kuitit",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "Apple no_reply receipt with ilmoitukset-laaja enabled",
+   "enable": [
+    "ilmoitukset-laaja"
+   ],
+   "from": "Apple <no_reply@email.apple.com>",
+   "subject": "Your receipt from Apple.",
+   "expect": {
+    "rule": "ilmoitukset-laaja",
+    "label": "Lajittelu/Ilmoitukset",
+    "alsoMatched": [
+     "kuitit"
+    ]
+   }
+  },
+  {
+   "name": "no_reply@ without a receipt is unmatched by default",
+   "from": "Apple <no_reply@email.apple.com>",
+   "expect": null
+  },
+  {
+   "name": "donotreply@ only with ilmoitukset-laaja",
+   "enable": [
+    "ilmoitukset-laaja"
+   ],
+   "from": "donotreply@pankki.fi",
+   "expect": {
+    "rule": "ilmoitukset-laaja",
+    "label": "Lajittelu/Ilmoitukset",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "do-not-reply@ only with ilmoitukset-laaja",
+   "enable": [
+    "ilmoitukset-laaja"
+   ],
+   "from": "do-not-reply@x.fi",
+   "expect": {
+    "rule": "ilmoitukset-laaja",
+    "label": "Lajittelu/Ilmoitukset",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "MAILER-DAEMON@ only with ilmoitukset-laaja",
+   "enable": [
+    "ilmoitukset-laaja"
+   ],
+   "from": "Mail Delivery Subsystem <MAILER-DAEMON@googlemail.com>",
+   "expect": {
+    "rule": "ilmoitukset-laaja",
+    "label": "Lajittelu/Ilmoitukset",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "MAILER-DAEMON@ unmatched by default",
+   "from": "Mail Delivery Subsystem <MAILER-DAEMON@googlemail.com>",
+   "expect": null
+  },
+  {
+   "name": "subject 'Kuitti'",
+   "subject": "Kuitti",
+   "expect": {
+    "rule": "kuitit",
+    "label": "Lajittelu/Kuitit",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "subject 'Kuittisi tilauksesta'",
+   "subject": "Kuittisi tilauksesta",
+   "expect": {
+    "rule": "kuitit",
+    "label": "Lajittelu/Kuitit",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "subject 'Kuitin kopio'",
+   "subject": "Kuitin kopio",
+   "expect": {
+    "rule": "kuitit",
+    "label": "Lajittelu/Kuitit",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "subject 'Kuitit liitteenä'",
+   "subject": "Kuitit liitteenä",
+   "expect": {
+    "rule": "kuitit",
+    "label": "Lajittelu/Kuitit",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "subject 'Tiedot kuitissa'",
+   "subject": "Tiedot kuitissa",
+   "expect": {
+    "rule": "kuitit",
+    "label": "Lajittelu/Kuitit",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "subject 'Kuiteista puuttui rivi'",
+   "subject": "Kuiteista puuttui rivi",
+   "expect": {
+    "rule": "kuitit",
+    "label": "Lajittelu/Kuitit",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "subject 'Ostokuitti 4.10.'",
+   "subject": "Ostokuitti 4.10.",
+   "expect": {
+    "rule": "kuitit",
+    "label": "Lajittelu/Kuitit",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "subject 'Tilausvahvistuksesi'",
+   "subject": "Tilausvahvistuksesi",
+   "expect": {
+    "rule": "kuitit",
+    "label": "Lajittelu/Kuitit",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "subject 'Sähkölasku saapui'",
+   "subject": "Sähkölasku saapui",
+   "expect": {
+    "rule": "kuitit",
+    "label": "Lajittelu/Kuitit",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "subject 'E-lasku on valmis'",
+   "subject": "E-lasku on valmis",
+   "expect": {
+    "rule": "kuitit",
+    "label": "Lajittelu/Kuitit",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "subject 'Puhelinlaskun erittely'",
+   "subject": "Puhelinlaskun erittely",
+   "expect": {
+    "rule": "kuitit",
+    "label": "Lajittelu/Kuitit",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "subject 'Your Receipt'",
+   "subject": "Your Receipt",
+   "expect": {
+    "rule": "kuitit",
+    "label": "Lajittelu/Kuitit",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "subject 'Receipts for October'",
+   "subject": "Receipts for October",
+   "expect": {
+    "rule": "kuitit",
+    "label": "Lajittelu/Kuitit",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "subject 'Invoice #123'",
+   "subject": "Invoice #123",
+   "expect": {
+    "rule": "kuitit",
+    "label": "Lajittelu/Kuitit",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "subject 'Invoicing update'",
+   "subject": "Invoicing update",
+   "expect": {
+    "rule": "kuitit",
+    "label": "Lajittelu/Kuitit",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "subject 'Tulen kuitenkin' is not a receipt",
+   "subject": "Tulen kuitenkin",
+   "expect": null
+  },
+  {
+   "name": "subject 'Kuittaus vastaanotettu' is not a receipt",
+   "subject": "Kuittaus vastaanotettu",
+   "expect": null
+  },
+  {
+   "name": "subject 'Kuitata saapuminen' is not a receipt",
+   "subject": "Kuitata saapuminen",
+   "expect": null
+  },
+  {
+   "name": "subject 'Laskuri' is not a receipt",
+   "subject": "Laskuri",
+   "expect": null
+  },
+  {
+   "name": "subject 'Korkolaskuri päivitetty' is not a receipt",
+   "subject": "Korkolaskuri päivitetty",
+   "expect": null
+  },
+  {
+   "name": "subject 'Laskuvarjohyppy lauantaina' is not a receipt",
+   "subject": "Laskuvarjohyppy lauantaina",
+   "expect": null
+  },
+  {
+   "name": "subject 'Laskukone rikki' is not a receipt",
+   "subject": "Laskukone rikki",
+   "expect": null
+  },
+  {
+   "name": "soft hyphen inside an RFC 2047 subject",
+   "subject": "=?UTF-8?B?S3Vpwq10dGkgdGlsYXVrc2VzdGFzaQ==?=",
+   "expect": {
+    "rule": "kuitit",
+    "label": "Lajittelu/Kuitit",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "zero-width space inside an RFC 2047 subject",
+   "subject": "=?UTF-8?B?S3VpdOKAi3RpIHRpbGF1a3Nlc3Rhc2k=?=",
+   "expect": {
+    "rule": "kuitit",
+    "label": "Lajittelu/Kuitit",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "NFD subject",
+   "subject": "Sähkölasku",
+   "expect": {
+    "rule": "kuitit",
+    "label": "Lajittelu/Kuitit",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "sender local part laskutus@",
+   "from": "Laskutus <laskutus@yritys.fi>",
+   "expect": {
+    "rule": "kuitit",
+    "label": "Lajittelu/Kuitit",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "sender local part receipts+acct",
+   "from": "Stripe <receipts+acct_1abc@stripe.com>",
+   "expect": {
+    "rule": "kuitit",
+    "label": "Lajittelu/Kuitit",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "RFC 2047 sender name",
+   "from": "=?UTF-8?B?U8OkaGvDtmxhc2t1IE95?= <info@sahko.fi>",
+   "expect": {
+    "rule": "kuitit",
+    "label": "Lajittelu/Kuitit",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "sender domain is ignored",
+   "from": "Info <info@lasku.fi>",
+   "expect": null
+  },
+  {
+   "name": "kuitit/ostot wins over List-Unsubscribe",
+   "userLabels": [
+    "kuitit/ostot"
+   ],
+   "headers": {
+    "List-Unsubscribe": "<mailto:x@y.fi>"
+   },
+   "expect": {
+    "rule": "kuitit-suodattimet",
+    "label": "Lajittelu/Kuitit",
+    "alsoMatched": [
+     "uutiskirjeet"
+    ]
+   }
+  },
+  {
+   "name": "Kuitit/Tilaukset in capitals",
+   "userLabels": [
+    "Kuitit/Tilaukset"
+   ],
+   "expect": {
+    "rule": "kuitit-suodattimet",
+    "label": "Lajittelu/Kuitit",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "vanhat-kuitit/x is not kuitit/*",
+   "userLabels": [
+    "vanhat-kuitit/x"
+   ],
+   "expect": null
+  },
+  {
+   "name": "kuitit without a slash is not kuitit/*",
+   "userLabels": [
+    "kuitit"
+   ],
+   "expect": null
+  },
+  {
+   "name": "Superhuman labels are never rule input",
+   "userLabels": [
+    "[Superhuman]/AI/Marketing"
+   ],
+   "expect": null
+  },
+  {
+   "name": "sender in the sent cache",
+   "sent": [
+    "anna@example.fi"
+   ],
+   "from": "Anna Ahola <ANNA@Example.FI>",
+   "expect": {
+    "rule": "ihmiset",
+    "label": "Lajittelu/Ihmiset",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "comma in an unquoted display name",
+   "sent": [
+    "matti.virtanen@x.fi"
+   ],
+   "from": "Virtanen, Matti <matti.virtanen@x.fi>",
+   "expect": {
+    "rule": "ihmiset",
+    "label": "Lajittelu/Ihmiset",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "comment after the address",
+   "sent": [
+    "anna@example.fi"
+   ],
+   "from": "anna@example.fi (Anna Ahola)",
+   "expect": {
+    "rule": "ihmiset",
+    "label": "Lajittelu/Ihmiset",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "own address never counts as a person",
+   "sent": [
+    "matti@example.fi"
+   ],
+   "from": "Matti <matti@example.fi>",
+   "expect": null
+  },
+  {
+   "name": "own alias never counts as a person",
+   "sent": [
+    "matti.alias@example.fi"
+   ],
+   "me": [
+    "matti@example.fi",
+    "matti.alias@example.fi"
+   ],
+   "from": "matti.alias@example.fi",
+   "expect": null
+  },
+  {
+   "name": "unknown sender",
+   "expect": null
+  },
+  {
+   "name": "no valid From address",
+   "sent": [
+    "anna"
+   ],
+   "from": "anna",
+   "expect": null
+  },
+  {
+   "name": "newsletter that also matches the others",
+   "sent": [
+    "noreply@kauppa.fi"
+   ],
+   "headers": {
+    "List-Unsubscribe": "<mailto:x@kauppa.fi>"
+   },
+   "from": "Kauppa <noreply@kauppa.fi>",
+   "subject": "Kuitti",
+   "expect": {
+    "rule": "uutiskirjeet",
+    "label": "Lajittelu/Uutiskirjeet",
+    "alsoMatched": [
+     "ilmoitukset",
+     "kuitit",
+     "ihmiset"
+    ]
+   }
+  },
+  {
+   "name": "PROMOTIONS alone is unmatched by default",
+   "systemLabels": [
+    "CATEGORY_PROMOTIONS"
+   ],
+   "expect": null
+  },
+  {
+   "name": "PROMOTIONS with gmail-mainokset enabled",
+   "enable": [
+    "gmail-mainokset"
+   ],
+   "systemLabels": [
+    "CATEGORY_PROMOTIONS"
+   ],
+   "expect": {
+    "rule": "gmail-mainokset",
+    "label": "Lajittelu/Uutiskirjeet",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "disabled rules are not in alsoMatched",
+   "systemLabels": [
+    "CATEGORY_PROMOTIONS"
+   ],
+   "headers": {
+    "List-Unsubscribe": "<mailto:x@y.fi>"
+   },
+   "expect": {
+    "rule": "uutiskirjeet",
+    "label": "Lajittelu/Uutiskirjeet",
+    "alsoMatched": []
+   }
+  },
+  {
+   "name": "disabling a default rule skips it",
+   "enable": [],
+   "subject": "Kuitti",
+   "disable": [
+    "uutiskirjeet"
+   ],
+   "headers": {
+    "List-Unsubscribe": "<mailto:x@y.fi>"
+   },
+   "expect": {
+    "rule": "kuitit",
+    "label": "Lajittelu/Kuitit",
+    "alsoMatched": []
+   }
+  }
+ ]
+}

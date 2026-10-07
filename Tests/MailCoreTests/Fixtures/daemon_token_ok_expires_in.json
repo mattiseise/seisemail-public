@@ -1,0 +1,8 @@
+{
+ "access_token": "ya29.test-access",
+ "expires_in": 3599,
+ "refresh_token": "1//test-refresh",
+ "refresh_token_expires_in": 604799,
+ "scope": "https://www.googleapis.com/auth/gmail.modify",
+ "token_type": "Bearer"
+}

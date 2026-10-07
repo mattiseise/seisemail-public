@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>CFBundleIdentifier</key><string>fi.seise.mail.daemon</string>
+  <key>CFBundleName</key><string>mak8r-daemon</string>
+  <key>CFBundleVersion</key><string>__BUILD__</string>
+  <key>GoogleClientID</key><string>__CLIENT_ID__</string>
+  <key>GoogleClientSecret</key><string>__CLIENT_SECRET__</string>
+</dict>
+</plist>
